@@ -1,0 +1,231 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --duration: 250ms;
+  --delay: 40ms;
+}
+
+::-moz-selection {
+
+}
+
+::selection {
+	background: #bbc8cc;
+	color: #ffffff;
+}
+
+body {
+  font: 11px "Verdana", sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  font: 5.0vw 'Comfortaa', cursive;
+  font-weight: bold;
+  letter-spacing: 0.2vw;
+  text-align: center;
+  margin-top: 8.0vw;
+  margin-bottom: 5.0vw;
+  transition: color 500ms;
+}
+
+h1 a, a:visited{
+  color: #b7cbce;
+  text-decoration: none;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+h1 a:hover, a:active, a:focus{
+  text-decoration: none;
+  color: #97a9b2;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.container {
+	background-color: #fff !important;
+	border-radius: 5px;
+	width: 80%;
+	margin: 25px auto 0px auto;
+  padding: 25px 0px 0px 0px;
+  height: 100%;
+}
+
+.faceDisplay {
+	font-size: 8.0vw;
+	font-family: "Menlo", "Consolas", monospace;
+	color: #a5a5a5;
+	text-align: center;
+
+	border-radius: 10px;
+	height: 30.0vw;
+	line-height: 30.0vw;
+	padding: 10px;
+	margin: 40px auto 25px auto;
+	background: #e2e2e2;
+
+	-moz-user-select: all;
+	-webkit-user-select: all;
+	-ms-user-select: all;
+	user-select: all;
+}
+
+.goButton {
+  color: #fff;
+  font-size: 2.0vw;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: bold;
+  width: 10vw;
+  background: #b7cbce;
+  border: none;
+  border-radius: 10px;
+  float: right;
+  padding: 2.5vw;
+  transition: background-color 500ms;
+  cursor: pointer;
+}
+
+.goButton:hover {
+  background-color: #a6bdc8;
+	transition: background-color 500ms;
+  outline: none;
+}
+
+.goButton:focus {
+  outline: none;
+}
+
+.goButton:active {
+  background-color: #849aa4;
+  outline: none;
+}
+
+.dropdownButton {
+  color: #6a717a;
+  font-size: 3.5vw;
+  font-family: "Verdana", sans-serif;
+  letter-spacing: 0.2vw;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+
+  padding: 2.0vw;
+  transition: background-color 500ms;
+  cursor: pointer;
+}
+
+.dropdownButton .symbol {
+  color: #b7cbce;
+  font-size: 2.5vw;
+}
+
+.dropdownButton:hover, .dropdownButton:active, .dropdownButton:focus  {
+	background-color: #f5f6f7 !important;
+	transition: background-color 500ms;
+}
+
+.dropdownContainer {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 25.0vw;
+  max-height: 40.0vw;
+  overflow: auto;
+  text-align: center;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.06);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 8px 12px;
+  transition: background-color 500ms;
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+  transition: background-color 500ms;
+}
+
+
+.faceHistory {
+  font-size: 2.0vw;
+  color: #adb3bc;
+  padding: 8px;
+  line-height: 10.0vw;
+  text-align: center;
+
+  -moz-user-select: all;
+	-webkit-user-select: all;
+	-ms-user-select: all;
+	user-select: all;
+}
+
+.inputBox {
+  font-size: 2.0vw;
+  font-family: "verdana", sans-serif;
+  font-weight: normal !important;
+  box-sizing: content-box !important;
+  width: 60.0vw !important;
+  padding: 2.5vw;
+  background-color: #f5f6f7;
+  border: none;
+  border-radius: 10px;
+
+  transition: background-color 500ms;
+}
+
+.inputBox:focus {
+  outline: none;
+  background-color: #eeeeee;
+
+  transition: background-color 500ms;
+}
