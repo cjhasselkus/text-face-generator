@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/text-face-generator/static/css/main.7a006ebc.chunk.css",
+    "main.js": "/text-face-generator/static/js/main.1bb8ab29.chunk.js",
+    "main.js.map": "/text-face-generator/static/js/main.1bb8ab29.chunk.js.map",
+    "runtime-main.js": "/text-face-generator/static/js/runtime-main.84d833d9.js",
+    "runtime-main.js.map": "/text-face-generator/static/js/runtime-main.84d833d9.js.map",
+    "static/js/2.96a61231.chunk.js": "/text-face-generator/static/js/2.96a61231.chunk.js",
+    "static/js/2.96a61231.chunk.js.map": "/text-face-generator/static/js/2.96a61231.chunk.js.map",
+    "index.html": "/text-face-generator/index.html",
+    "precache-manifest.82f8557f348f056bd16bba59dc969b52.js": "/text-face-generator/precache-manifest.82f8557f348f056bd16bba59dc969b52.js",
+    "service-worker.js": "/text-face-generator/service-worker.js",
+    "static/css/main.7a006ebc.chunk.css.map": "/text-face-generator/static/css/main.7a006ebc.chunk.css.map",
+    "static/js/2.96a61231.chunk.js.LICENSE.txt": "/text-face-generator/static/js/2.96a61231.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.84d833d9.js",
+    "static/js/2.96a61231.chunk.js",
+    "static/css/main.7a006ebc.chunk.css",
+    "static/js/main.1bb8ab29.chunk.js"
+  ]
+}
