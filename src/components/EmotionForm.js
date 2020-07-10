@@ -1,15 +1,16 @@
 import React from 'react'
-import './App.css'
+import * as S from './styles/EmotionFormStyles'
 
 function EmotionForm(props) {
-    return (
-       <form onSubmit={props.onSubmit}>
-        <label>
-        <input type="text" name="name" onChange = {props.onChange} placeholder="enter an emotion!" className = "inputBox"/>
-        </label>
-        <input type="submit" value="go" className ="goButton"/>
-      </form>
-    )
+  return (
+    <S.FormGroup onSubmit={props.onSubmit}>
+      <S.Input
+        placeholder={'happy'}
+        value={props.value}
+        onChange={props.onChange}/>
+      <S.SubmitButton type='submit'>Go</S.SubmitButton>
+    </S.FormGroup>
+  )
 }
 
 export default EmotionForm

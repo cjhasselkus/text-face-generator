@@ -1,8 +1,10 @@
 import React from 'react'
 import { getEmotionObjects } from '../actionCreators/emotionCreation.js'
 import EmotionForm from './EmotionForm'
+import Title from './Title'
 import HistoryDropdown from './HistoryDropdown'
-import './App.css'
+// import './App.css'
+import * as S from './styles/AppStyles'
 
 class App extends React.Component {
   constructor(props) {
@@ -93,20 +95,22 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className = "container">
-        <h1>how are you feeling?</h1>
-        <EmotionForm
-          value = {this.state.currentValue}
-          onSubmit = {this.handleSubmit}
-          onChange = {this.handleChange}/>
+      <S.Content>
+        <S.Container>
+          <Title text='How are you feeling?'/>
+          <S.Box>
+            <S.Subtitle>Enter an emotion to generate a face</S.Subtitle>
+            <EmotionForm
+              value = {this.state.currentValue}
+              onSubmit = {this.handleSubmit}
+              onChange = {this.handleChange}/>
 
-        <div className="faceDisplay">{this.state.currentFace}</div>
-        <HistoryDropdown
-          history = {this.state.history}
-          open = {this.state.historyDropdownOpen}
-          handleClick = {this.handleHistoryDropdownClick}
-          container = {this.historyDropdownContainer}/>
-      </div>
+            <S.Display id='faceDisplay'>
+              {this.state.currentFace}
+            </S.Display>
+          </S.Box>
+        </S.Container>
+      </S.Content>
     )
   }
 }
