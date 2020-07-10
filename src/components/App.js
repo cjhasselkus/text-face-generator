@@ -32,7 +32,7 @@ class App extends React.Component {
     document.removeEventListener("mousedown", this.handleClickOutside)
   }
 
-  handleClickOutside = event => {
+  handleClickOutside = (event) => {
     if (this.historyDropdownContainer.current && !this.historyDropdownContainer.current.contains(event.target)) {
       this.setState({
         historyDropdownOpen: false,
@@ -88,27 +88,26 @@ class App extends React.Component {
                 emotion.mouths[mouthIndex] +
                 emotion.eyes[eyeIndex][1] +
                 emotion.arms[armIndex][1])
-                 })
+    })
   }
 
   render() {
+    return (
+      <div className = "container">
+        <h1>how are you feeling?</h1>
+        <EmotionForm
+          value = {this.state.currentValue}
+          onSubmit = {this.handleSubmit}
+          onChange = {this.handleChange}/>
 
-      return (
-        <div className = "container">
-          <h1><a href="/">how are you feeling?</a></h1>
-          <EmotionForm
-              value = {this.state.currentValue}
-              onSubmit = {this.handleSubmit}
-              onChange = {this.handleChange}/>
-
-          <div className="faceDisplay">{this.state.currentFace}</div>
-          <HistoryDropdown
-            history = {this.state.history}
-            open = {this.state.historyDropdownOpen}
-            handleClick = {this.handleHistoryDropdownClick}
-            container = {this.historyDropdownContainer}/>
-        </div>
-      )
+        <div className="faceDisplay">{this.state.currentFace}</div>
+        <HistoryDropdown
+          history = {this.state.history}
+          open = {this.state.historyDropdownOpen}
+          handleClick = {this.handleHistoryDropdownClick}
+          container = {this.historyDropdownContainer}/>
+      </div>
+    )
   }
 }
 
